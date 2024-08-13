@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71); /* Gradient background */
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  font-size: 30px;
+}
+
+.nav-links li {
+  margin-left: 50px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  transform: scale(1.1); /* Scale up on hover */
+}

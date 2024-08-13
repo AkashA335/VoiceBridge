@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap'); /* Import a sleek font */
+
+/* Base styling for the drop wrapper */
+.drop-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height to center vertically */
+}
+
+.drop-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 400px;
+  height: 200px; /* Increased height for note visibility */
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif; /* Use the custom font */
+  transition: all 0.3s ease;
+}
+
+/* Styling for the instructions text */
+.drop-container p {
+  font-size: 18px; /* Adjusted for better readability */
+  color: #333;
+  margin: 0;
+  font-weight: 600; /* Bold text for emphasis */
+}
+
+/* Styling for the note */
+.file-note {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* Hide the default file input */
+.drop-container input[type="file"] {
+  display: none;
+}
+
+/* Styling for when a file is dragged over the drop area */
+.drop-container.dragover {
+  border-color: #007bff;
+  background-color: #e0f7ff;
+}
+
+.drop-container.dragover p {
+  color: #007bff;
+}
+
+/* Hover effect for the drop container */
+.drop-container:hover {
+  border-color: #0056b3;
+  background-color: #f0f8ff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}

@@ -1,0 +1,4 @@
+train: C:\Users\aakas\OneDrive\Desktop\Grind\Renjan Master\alnum_2.0\training\train
+val: C:\Users\aakas\OneDrive\Desktop\Grind\Renjan Master\alnum_2.0\training\test
+nc: 5
+names: ["1", "2", "3", "4", "5"]
